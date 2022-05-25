@@ -1,0 +1,192 @@
+/* Fonts --------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+
+/* RESET --------------*/
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* ALL Box --------------*/
+
+body {
+     font-family: 'Outfit', sans-serif;
+    background:  #f8bdd1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Starter Box --------------------------*/
+.container {
+     max-width: 350px;
+     margin: 0 auto;
+   
+}
+
+.wrapper {
+     margin: 2rem 1rem;
+     padding: 2rem;
+     border-radius: 10px;
+     background-color:  #4d3e73;
+     box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.60);
+
+}
+
+/* Img Config Starter Box --------------*/
+.img-top {
+     position: relative;
+     overflow: hidden;
+     border-radius: 10px;
+}
+
+
+
+.img-top img {
+     width: 100%;
+     display: block;
+}
+
+
+.img-overlay {
+     position: absolute;
+     left: 0;
+     top: 0;
+     height: 100%;
+     width: 100%;
+     background-color: hsl(178, 100%, 50%, 0.5);
+     display: none;
+}
+
+
+
+.img-overlay img {
+     position: absolute;
+     width: 50px;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+}
+
+
+.img-top:hover .img-overlay {
+     display: flex;
+}
+
+/* Text Config Middle Box ----------------*/
+
+.text-box {
+     font-size: 15px;
+     color: orange;
+     font-weight: 300;
+}
+
+.text-box a {
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.862);
+     font-size: 20px;
+     font-weight: 500;
+     padding: 20px 0;
+     display: flex
+}
+
+.text-box a:hover {
+     color: hsl(178, 100%, 50%);
+}
+
+
+.box-flex {
+     display: flex;
+   justify-content: space-between; 
+    
+}
+
+
+
+/* Sub Text Config Middle Box ----------------*/
+
+.eth {
+     display: flex;
+    margin-top: 1.0rem;
+    margin-bottom: 1.0rem;
+    
+}
+
+.eth img {
+     max-width: 15px;
+    max-height: 15px;
+   
+    
+}
+
+.eth p {
+     color: hsl(178, 100%, 50%);
+     font-weight: 500;
+     padding-left: 7px;
+     font-size: 15px;
+
+}
+
+.days {
+     display: flex;
+    margin-top: 1.0rem;
+    margin-bottom: 1.0rem;
+    color: white;
+}
+
+.days img {
+     max-width: 20px;
+    max-height: 20px;
+
+}
+
+
+.days p {
+     font-weight: 400;
+     padding-left: 7px;
+     font-size: 15px;
+}
+
+
+/* Divider --------------*/
+
+hr {
+     border-color: white
+}
+
+/*  Img and Text Config Final Box --------------*/
+
+.author {
+     display: flex;
+     
+}
+
+.author img {
+     max-width: 40px;
+    max-height: 40px;
+     border: 2px solid #fff;
+     border-radius: 100%;
+     margin-top: 15px;
+}
+
+
+.author p {
+     margin-top: 25px;
+     padding-left: 15px;
+     color: orange;
+     font-weight: 300;
+     font-size: 13px;
+}
+
+.author strong {
+     color: white;
+     font-weight: 500;
+}
+
+.author p strong:hover {
+     color:  hsl(178, 100%, 50%);
+}
